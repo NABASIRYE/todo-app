@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #6108085b; 
+}
+h1{
+    margin-bottom: 30px 0;
+    box-shadow: 5px 5px 5px #6108085b;
+    text-shadow: 5px 5px 5px #6108085b;
+    background-color: #6108085b;
+    border: 3px solid white;
+    border-radius: 10px 10px 0 0;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 60%;
+    min-height: 500px;
+    text-align: center;
+    margin: 120px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+    background-color: white;
+    box-shadow: 5px 5px 5px #6108085b;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-form{
+    margin-bottom: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-input{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #6108085b;;
+    /* outline: none; */
+    width: 70%;
+    background-color: transparent;
+    color: black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-button{
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid #6108085b;
+    background-color: #6108085b;
+    color: black;
 }
-
-.App-link {
-  color: #61dafb;
+.todo-button.edit{
+    background-color: #854545fd;
+    color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icons{
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.delete-icon{
+    color: rgb(112, 8, 8);
+    margin: 0 10px 0 10px;
+}
+.set-icon{
+    color: rgb(112, 8, 8);
+    margin: 0 10px 0 10px;
+}
+.todo-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #6108085b;
+    width: 78%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #6108085b;
+    border: none;
+}
+.complete{
+    color: black;
+    text-decoration: line-through;
+    opacity: 0.5;
 }
