@@ -41,6 +41,9 @@ h1{
     background-color: transparent;
     color: black;
 }
+.todo-input{
+    outline: none;
+}
 
 .todo-button{
     padding: 10px;
