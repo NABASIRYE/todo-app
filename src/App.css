@@ -41,7 +41,7 @@ h1{
     background-color: transparent;
     color: black;
 }
-.todo-input{
+.todo-input:focus{
     outline: none;
 }
 
@@ -53,7 +53,9 @@ h1{
     color: black;
     font-size: bold;
 }
-
+.todo-button:focus{
+    outline: none;
+}
 .todo-button.edit{
     background-color: #854545fd;
     color: white;
